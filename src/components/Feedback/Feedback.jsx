@@ -5,18 +5,24 @@ import css from './Feedback.module.css';
 
 class Feedback extends React.Component {
     static propTypes = {
-    
+        feedbackTitle: PropTypes.string,
+        children: PropTypes.node,
     };
 
-    render () {
+    render ({feedbackTitle, children}) {
         return (
-            <FeedbackOptions className="feedbackOptions"
-                            // options={} 
+            <div>
+                {feedbackTitle && <h2>{feedbackTitle}</h2>}
+                {children}
+                {/* <FeedbackOptions className="feedbackOptions"
+                            options={} 
                             onLeaveFeedbackGood={} 
                             onLeaveFeedbackNeutral={}
                             onLeaveFeedbackBad={} 
             />
-            // <FeedbackOptions options={} onLeaveFeedback={} />
+            <FeedbackOptions options={} onLeaveFeedback={} /> */}
+            </div>
+        
         )
     };
 };

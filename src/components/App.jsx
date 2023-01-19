@@ -50,8 +50,8 @@ class App extends React.Component {
   render () {
     return (
       <>
-        <Feedback className="feedback"></Feedback>
-        <Section title="Statistics" className="sectionStatistics"></Section>
+        <Feedback feedbackTitle="Please leave feedback" className="feedback"></Feedback>
+        <Section sectionTitle="Statistics" className="sectionStatistics"></Section>
       </>
     )
   };
