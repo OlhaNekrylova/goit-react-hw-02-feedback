@@ -1,3 +1,9 @@
-/* .sectionStatistics {
-    
-} */
+.title {
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.options {
+    padding-left: 20px;
+    margin-left: 20px;
+}
