@@ -51,7 +51,7 @@ class App extends React.Component {
             neutral={neutral}
             bad={bad}
             total={total}
-            positiveFeedbackPercentage={positivePercentage}
+            positivePercentage={positivePercentage}
           />
         </Section>
       </>
